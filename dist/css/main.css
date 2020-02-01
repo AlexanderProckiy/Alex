@@ -1,4 +1,41 @@
 html * {
   outline: 1px solid red; }
 
+.test {
+  color: green; }
+
+.img {
+  width: 200px;
+  height: 300px; }
+
+.bg-png1 {
+  width: 259px;
+  height: 194px;
+  background: url("../img/css_sprites.png") -729px -7px; }
+
+.bg-png2 {
+  width: 230px;
+  height: 220px;
+  background: url("../img/css_sprites.png") -222px -7px; }
+
+.bg-png3 {
+  width: 249px;
+  height: 203px;
+  background: url("../img/css_sprites.png") -466px -7px; }
+
+.bg-png4 {
+  width: 201px;
+  height: 251px;
+  background: url("../img/css_sprites.png") -7px -7px; }
+
+.bg-png5 {
+  width: 259px;
+  height: 194px;
+  background: url("../img/css_sprites.png") -1002px -7px; }
+
+.bg-png6 {
+  width: 285px;
+  height: 177px;
+  background: url("../img/css_sprites.png") -1275px -7px; }
+
 /*# sourceMappingURL=maps/main.css.map */
