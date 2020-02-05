@@ -7,19 +7,12 @@
     <title>Hello world</title>
   </head>
   <body>
-   <div>
-     <h1>Мой первый сайт</h1>
-      <p>       
-       Provides an elegant and quick way to create default text or generate Lorem Ipsum. Optimized for quick usage, but it can customized.
-       The Lorem Ipsum Generator quickly delivers default text to complement your amazing design. The default settings are optimized 
-       to be used right after installation, but you can easily customize a few settings to get the perfect text for your taste. 
-       Each sentence is randomly generated to simulate real text.
-      </p>
-      <ul>
-        Main menu
-      </ul>
-      <li>first</li>
-      <li>second</li>
-    </div>  
+    <div class=big-div>
+      <a href="#anchor"> go to Footer</a>
+      @@include("./partials/relative/_relative.html")
+      @@include("./partials/absolute/_absolute.html")
+    </div>
+    <div id="anchor">Footer</div>
+   @@include("./partials/fixed/_fixed.html", {"test1": "hjhgjhgiu"})
   </body>
 </html>

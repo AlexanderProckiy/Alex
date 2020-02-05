@@ -1,4 +1,49 @@
+.fixed {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: red;
+  height: 100px;
+  width: 100%; }
+
+.second,
+.third {
+  display: inline-block;
+  height: 100px;
+  width: 200px; }
+
+.second {
+  position: relative;
+  z-index: 3;
+  left: 40px;
+  top: 20px;
+  background-color: red; }
+
+.third {
+  position: relative;
+  z-index: 2;
+  background-color: green; }
+
+.container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background-color: red; }
+
+.unread {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: green;
+  border: 2px solid blue;
+  padding: 20px; }
+
 html * {
   outline: 1px solid red; }
+
+.big-div {
+  height: 200vh;
+  margin-top: 105px;
+  background-color: lightgray; }
 
 /*# sourceMappingURL=maps/main.css.map */
