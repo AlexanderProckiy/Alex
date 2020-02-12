@@ -1,18 +1,35 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/main.css">
-    <script src="./js/main.js"></script>
-    <title>Hello world</title>
-  </head>
-  <body>
-    <div class=big-div>
-      <a href="#anchor"> go to Footer</a>
-      @@include("./partials/relative/_relative.html")
-      @@include("./partials/absolute/_absolute.html")
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/main.js"></script>
+  <title>Hello world</title>
+</head>
+
+<body>
+  <div class="class1"> class1
+    <div class="class2"> class2
+      <div class="class3"> class3</div>
     </div>
-    <div id="anchor">Footer</div>
-   @@include("./partials/fixed/_fixed.html", {"test1": "hjhgjhgiu"})
-  </body>
+  </div>
+  <div>.</div>
+  <div class="class1"> class1
+    <div class="class3"> class3
+    </div>
+  </div>
+  <div>.</div>
+  <div class="class1"> class1
+    <div class="class2"> class2 class5
+      <div class="class3">class3</div>
+      <div class="class3">class3</div>
+    </div>
+  </div>
+  <div>.</div>
+  <div class="class3">class3</div>
+  <div>.</div>
+  <div class="class2">class2</div>
+</body>
+
 </html>
