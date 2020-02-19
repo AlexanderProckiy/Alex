@@ -91,7 +91,7 @@ const server = () => {
   
 };
 
-const build = series(cleanDist, parallel(httpBuild, stylesBuild, fontsBuild, imgsBuild, jsBuild));
+const build = series(cleanDist, parallel(httpBuild, stylesBuild, fontsBuild, imgsBuild, jsBuild, fontsBuild));
 exports.start = series(build, server);
 exports.clean = series(cleanDist);
 exports.build = series(build);

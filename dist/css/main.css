@@ -1,28 +1,65 @@
-.class1 {
-  width: 200px;
-  height: 200px;
-  background-color: red; }
+.osnova {
+  border: 1px solid black;
+  height: 500px;
+  width: 940px; }
 
-.class2 {
-  width: 100px;
-  height: 100px;
-  background-color: green; }
+.osnova_left {
+  border: 1px solid blue;
+  float: left;
+  height: 500px;
+  width: 620px; }
 
-.class3 {
-  width: 50px;
-  height: 50px;
-  background-color: yellow;
-  margin-bottom: 5px; }
+.osnova_right {
+  border: 1px solid green;
+  float: right;
+  height: 500px;
+  width: 300px; }
 
-.class5 {
-  width: 120px;
-  height: 130px;
-  background-color: blue; 
-}
-.class1 .class2 {
-  background-color: aquamarine;
-}
-.class1 .class2 .class3:last-child {
-  background-color: black;
-}
+.menu {
+  margin-top: 10px;
+  max-width: 620px;
+  height: 30px;
+  background-color: #e4dede; }
+
+.menu1 {
+  padding: 5px 10px;
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #504f4f; }
+
+.menu2 {
+  padding: 5px 10px;
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #504f4f; }
+
+.menu3 {
+  padding: 5px 10px;
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #504f4f; }
+
+.menu1:hover {
+  background-color: #4b4949;
+  color: white; }
+
+.menu2:hover {
+  background-color: #4b4949;
+  color: white; }
+
+.menu3:hover {
+  background-color: #4b4949;
+  color: white; }
+
+.contant1 {
+  background-color: lemonchiffon;
+  border: 1px solid black;
+  width: 100%;
+  height: 280px; }
+
+.contant1_img {
+  width: 380px;
+  height: 260px;
+  border: black 1px solid; }
+
 /*# sourceMappingURL=maps/main.css.map */
