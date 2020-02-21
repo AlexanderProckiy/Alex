@@ -1,5 +1,5 @@
 .osnova {
-  height: 500px;
+  height: 1150px;
   width: 940px; }
 
 .osnova_left {
@@ -10,12 +10,18 @@
 .osnova_right {
   border: 1px solid green;
   float: right;
-  height: 500px;
+  height: 1150px;
   width: 300px; }
+
+.footer {
+  height: 200px;
+  width: 940px;
+  border: 1px solid green;
+  margin-top: 5px; }
 
 .menu {
   margin-top: 10px;
-  max-width: 620px;
+  width: 100%;
   height: 30px;
   background-color: #e4dede; }
 
@@ -89,12 +95,13 @@
   font-size: 17px;
   font-weight: 500; }
 
-.Main_News {
-  height: 100%;
+.contant2 {
+  height: auto;
   width: 100%; }
 
 .Main_News_t {
-  padding: 15px;
+  padding-top: 20px;
+  padding-bottom: 5px;
   height: 35px;
   width: 100%; }
 
@@ -111,8 +118,8 @@
   border-bottom: black 3px solid; }
 
 .Main_News_img {
-  width: 620px;
-  height: 500px; }
+  width: 100%;
+  height: 210px; }
 
 .Main_News_img_1 {
   width: 140px;
@@ -134,5 +141,89 @@
   width: 140px;
   height: 210px;
   float: right; }
+
+.contant3 {
+  height: 600px;
+  width: 100%; }
+
+.contant3_left {
+  height: 600px;
+  width: 60%;
+  float: left; }
+
+.Last_News_t {
+  padding-bottom: 5px;
+  height: 35px;
+  width: 100%; }
+
+.Last_News_text {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  width: 34%; }
+
+.Last_News_line {
+  height: 30px;
+  width: 66%;
+  float: left;
+  border-bottom: #C80000 3px solid; }
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+li {
+  margin-top: 5px;
+  font-size: 15px; }
+
+.Newsfeed_t {
+  margin-top: 20px;
+  height: 35px;
+  width: 100%; }
+
+.Newsfeed_text {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  width: 34%; }
+
+.Newsfeed_line {
+  height: 30px;
+  width: 66%;
+  float: left;
+  border-bottom: #C80000 3px solid; }
+
+.Newsfeed_img {
+  margin-top: 10px;
+  height: 55px; }
+
+.Newsfeed_img_1 {
+  width: 100px;
+  float: left; }
+
+.Newsfeed_img_2 {
+  width: 70%;
+  height: 45px;
+  float: left;
+  font-weight: 700;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-left: 5px; }
+
+.contant3_right {
+  height: 600px;
+  width: 220px;
+  float: right; }
+
+.contant3_right_img_1 {
+  margin-bottom: 15px;
+  font-weight: 600; }
+
+.contant3_right_img_2 {
+  margin-bottom: 15px;
+  font-weight: 600; }
+
+.contant3_right_img_3 {
+  font-weight: 600; }
 
 /*# sourceMappingURL=maps/main.css.map */
