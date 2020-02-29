@@ -1,1 +1,84 @@
 
+.obch {
+  display: flex;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.img1 {
+  width: 100%;
+  height: 100%;
+}  
+.line_search {
+  height: 30px;
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+  display: flex;
+}
+.icon:hover+.line_search {
+  width: 300px;
+  transition: all 0.5s;
+}
+.rodit {
+  position: relative;
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 200px;
+  height: 200px;
+  
+ 
+  overflow: hidden;
+}
+.reb1 {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(45deg);
+  background-color: blueviolet;
+}
+.rodit2 {
+  position: relative;
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 200px;
+  height: 200px;
+}
+.reb12 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 58%;
+  transform: rotate(60deg);
+  background-color: chocolate;
+  border-left: 1px solid black ;
+  border-right: 1px solid black;
+}
+.reb22 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 58%;
+  transform: rotate(300deg);
+  background-color: chocolate;
+  border-left: 1px solid black ;
+  border-right: 1px solid black;
+}
+.reb32 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 58%;
+  background-color: chocolate;
+  border-left: 1px solid black ;
+  border-right: 1px solid black;
+}
