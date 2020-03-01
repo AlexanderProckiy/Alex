@@ -1,1 +1,135 @@
 
+body {
+    
+}
+
+.obch {
+    display: flex;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+.kvadrat1 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    transition: background-color .5s, height .5s, width .5s;
+}
+
+.kvadrat2 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(52, 97, 52);
+    transition: background-color .5s, height .5s, width .5s;
+}
+
+.kvadrat3 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(146, 233, 146);
+    transition: background-color .5s, height .5s, width .5s;
+}
+.kvadrat1:hover {
+    background-color: rgb(207, 204, 24);
+    height: 150px;
+    width: 150px;
+}
+.kvadrat2:hover {
+    background-color: rgb(207, 204, 24);
+    height: 150px;
+    width: 150px;
+}
+.kvadrat3:hover {
+    background-color: rgb(207, 204, 24);
+    height: 150px;
+    width: 150px;
+}
+.obch2 {
+    display: flex;
+    position: absolute;
+    left: 100px;
+    top: 250px;
+}
+.kvadrat12 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    transition: transform .5s, background-color .5s;
+    
+}
+
+.kvadrat22 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(52, 97, 52);
+    transition: transform .5s, background-color .5s;
+}
+
+.kvadrat32 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(146, 233, 146);
+    transition: transform .5s, background-color .5s;
+}
+.kvadrat12:hover {
+    transform: scale(1.3);
+    background-color: rgb(207, 204, 24);
+    
+}
+.kvadrat22:hover {
+    transform: scale(1.3);
+    background-color: rgb(207, 204, 24);
+}
+.kvadrat32:hover {
+    transform: translate(100px,0); 
+    background-color: rgb(207, 204, 24);
+}
+
+
+.obch3 {
+    display: flex;
+    position: absolute;
+    left: 100px;
+    top: 400px;
+}
+.kvadrat13 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    animation-name: Kadr;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.48,.98,.48,.98);
+    animation-delay: 2s;
+}
+.kvadrat23 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    animation-name: Kadr;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.48,.98,.48,.98);
+    animation-delay: .5s;
+}
+.kvadrat33 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    animation-name: Kadr;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.48,.98,.48,.98);
+
+}
+
+@keyframes Kadr {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(300px);
+        background-color: rgb(207, 204, 24);
+        
+    }
+}
