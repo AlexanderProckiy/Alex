@@ -92,7 +92,7 @@
 .kvadrat23 {
   height: 100px;
   width: 100px;
-  background-color: green;
+  background-color: #346134;
   animation-name: Kadr;
   animation-duration: 5s;
   animation-iteration-count: 1;
@@ -102,7 +102,7 @@
 .kvadrat33 {
   height: 100px;
   width: 100px;
-  background-color: green;
+  background-color: #92e992;
   animation-name: Kadr;
   animation-duration: 6s;
   animation-iteration-count: 1;
