@@ -1,1 +1,59 @@
 
+ 
+@font-face {
+    font-family: 'icons';
+    src: url('../fonts/sap-icofonts.woff');
+}
+.accordeon {
+    margin-top: 10px;
+    width: 150px;
+    border: 1px solid black;
+}
+input[type='checkbox'] {
+    display: none;
+}
+label {
+    display: block;
+}
+label:after {
+    content: '\E000';
+    font-family: icons;
+    margin-left: 20px;
+}
+.accordeon2 {
+    height: 0;
+    overflow: hidden;
+}
+input:checked + label:after {
+    content: '\E00F';
+    font-family: icons;
+    margin-left: 20px;
+}
+input:checked ~ .accordeon2 {
+    content: '';
+    height: 250px;
+    overflow: visible;
+}
+
+
+label {
+    display: block;
+    border: 1px solid black;
+    width: 150px;
+}
+/*input[type='radio'] {
+    display: none;
+}*/
+.accord {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.text1, .text2, .text3 {
+    width: 150px;
+    border: 1px solid black;
+    display: none;
+}
+input[type='radio']:checked + label:after {
+    content: '\E00F';
+    font-family: icons;
+    margin-left: 20px;
