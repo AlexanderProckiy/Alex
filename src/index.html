@@ -10,6 +10,115 @@
 </head>
 
 <body>
+<form action="Search.php" method="get">
+  Какую машину ищите:<br>
+  <input type="text" name="carmodel" placeholder="Carmodel" autofocus> <br>
+  Только новые:
+  <input type="checkbox" name="onlynew" checked><br>
+  <input type="submit" value="Поиск">
+</form>
+<br>
+<form action="Vote.jsp" method="post">
+  Проголосуйте:<br>
+  <input type="radio" name="answer" value=1>да<br>
+  <input type="radio" name="answer" value=2 checked>нет<br>
+  <input type="radio" name="answer" value=3>воздержался<br>
+  <input type="hidden" name="votenum" value="111">
+  <input type="submit" value="Голосовать!">
+</form>
+<br>
+<form method="POST" enctype="multipart/form-data" action="Fot.asp">
+Фото:<br>
+<input type="file" name="myphoto"><br>
+<input type="text" name="comment" style="width: 200px" placeholder="коммент к фото"><br>
+Ваш пароль:<br> 
+<input type="password" name="pass"><br>
+<input type="submit" value="Опубликовать">
+</form>
+<br>
+<form action="Reply.php" method="post">
+  Имя: <input type="text" name="myname"> <br>
+  Вы уже большой?
+  <input type="checkbox" name="big" value="YES"><br>
+  Ответ:<br>
+  <textarea name="mytext" placeholder="Я считаю, что..."></textarea><br>
+  <input type="submit" value="Отправить">
+</form>
+<br>
+<form action="FindAnimal.php" method="get">
+  Имя вашего домашнего питомца:<br>
+  <input type="text" name="animalname"><br>
+  Что за животное:<br>
+  <select name="animalkind" multiple>
+    <option value="1">кошка</option>
+    <option value="2">собака</option>
+    <option value="3">попугай</option>
+    <option value="4">тушкан</option>
+    <option value="5">кролик</option>
+    <option value="6">хомяк</option>
+  </select><br>
+  <input type="submit" value="Найти!">
+</form>
+<br>
+<form action="FindBook.php" method="get">
+  Название книги:
+  <input type="text" name="bookname"><br>
+  <button type="submit">
+    Поиск<br>
+    <b>Начать!</b><br>
+    <img src="images/smile.gif">
+  </button>
+</form>
+<br>
+<form action="Lofin.asp" method="post">
+  <label>
+    Ваше имя:
+    <input type="text" name="nam">
+  </label><br>
+  <label>
+    Ваша фамилия:
+    <input type="text" name="fam">
+  </label>
+</form>
+<br>
+<form action="Login.asp" method="post">
+  <label for="NNN">Ваше имя:</label>
+  <input type="text" name="nam" id="NNN"><br>
+  <label for="FFF">Ваша фамилия:</label>
+  <input type="text" name="fam" id="FFF">
+</form>
+<br>
+<form action="AddAnketa.php" method="post">
+  <fieldset style="display: inline-block; border: 4px solid black;">
+    <legend>Паспортные данные</legend>
+    <label>
+      Ваша фамилия:<br>
+      <input type="text" name="fam" placeholder="Иванов">
+    </label><br>
+    <label>
+      Ваше Имя:<br>
+      <input type="text" name="im" placeholder="Иван">
+    </label><br>
+  </fieldset>
+  <br>
+  <fieldset style="border: double red 3px; display: inline-block;">
+    <legend style="font-style: italic;">Контакты</legend>
+    <label>
+      Телефон<br>
+      <input type="text" name="tel" maxlength="10">
+    </label><br>
+    <label>
+      E-mail:<br>
+      <input type="text" name="email" placeholder="iv@mail.ru">
+    </label><br>
+    <label>
+      Skype:<br>
+      <input type="text" name="skype" placeholder="ivanov.i">
+    </label><br>
+  </fieldset>
+</form>
+
+
 </body>
 
 </html>
