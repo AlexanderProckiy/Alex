@@ -33,7 +33,7 @@ input:checked + label {
     border-bottom: 1px solid rgb(40, 130, 133);
     & ~ .coment {
         background-color: rgb(255, 251, 235);
-        height: 120px;
+        max-height: 900px;
         overflow-y: scroll;
         transition: height .3s linear;
     }
@@ -55,7 +55,7 @@ h4 {
     background-color: rgb(255, 251, 235);
     padding: 0;
     text-align: justify;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
     font-size: 10px;
     transition: height .1s linear;

@@ -32,7 +32,7 @@ input:checked + label {
   border-bottom: 1px solid #288285; }
   input:checked + label ~ .coment {
     background-color: #fffbeb;
-    height: 120px;
+    max-height: 900px;
     overflow-y: scroll;
     transition: height .3s linear; }
   input:checked + label ~ img {
@@ -52,7 +52,7 @@ h4 {
   background-color: #fffbeb;
   padding: 0;
   text-align: justify;
-  height: 0;
+  max-height: 0;
   overflow: hidden;
   font-size: 10px;
   transition: height .1s linear; }
