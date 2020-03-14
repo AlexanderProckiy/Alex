@@ -1,1 +1,64 @@
 
+input {
+    display: none;
+}
+
+.modal_open {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%);
+    background-color: rgb(207, 207, 204);
+    color: rgb(255, 255, 255);
+    writing-mode: vertical-lr;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+}
+#open:checked ~ .modal {
+    display: flex;
+    
+}
+.modal_content {
+    position: relative;
+    padding: 50px 10px 10px 10px;
+    background-color: lightcoral;
+    border: lightcyan;
+    border-radius: 3px;
+}
+
+.modal_close {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightpink;
+    border-radius: 5px;
+    border: rgb(145, 38, 38) 1px solid;
+    cursor: pointer;
+}
+.modal_close:hover::after {
+    content: attr(data-tips);
+    display: flex;
+    position: absolute;
+    top: -14px;
+    right: -136px;
+    text-align: center;
+    background-color: lightpink;
+    border-radius: 5px;
+}

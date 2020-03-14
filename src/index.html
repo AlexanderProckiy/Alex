@@ -5,11 +5,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/main.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha256-qvCL5q5O0hEpOm1CgOLQUuHzMusAZqDcAZL9ijqfOdI=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha256-nXBV7Gr2lU0t+AwKsnS05DYtzZ81oYTXS6kj7LBQHfM=" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
   <script src="./js/main.js"></script>
   <title>Hello world</title>
 </head>
 
 <body>
+  <p>Amy normally hated Monday mornings, but this year was different. Kamal was in her art class and she liked Kamal.
+    She was waiting outside the classroom when her friend Tara arrived.
+    “Hi Amy! Your mum sent me a text. You forgot your inhaler. Why don’t you turn your phone on?” Amy didn’t like
+    technology. She never sent text messages and she hated Facebook too.
+  </p>
+  <input type="radio" name="modal" id="open">
+  <input type="radio" name="modal" id="close">
+  <label for="open" class="modal_open">Sent us</label>
+  <div class="modal">
+    <div class="modal_content">
+      <label for="close" class="modal_close" data-tips="close modal window">x</label>
+      <div class="content">Hello world</div>
+    </div>
+  </div>
+<div>
+  <div>Your content</div>
+  <div>Your content</div>
+  <div>Your content</div>
+  <div>Your content</div>
+  <div>Your content</div>
+</div>
+<script>
+  $(document).ready(function){
+    $(".owl-carusel").owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true
+    });
+  });
+</script>
 </body>
 
 </html>
