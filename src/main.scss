@@ -1,1 +1,81 @@
 
+input {
+    display: none;
+}
+.ob_block {
+    position: relative;
+    
+}
+.open {
+    position: absolute;
+    right: 0;
+    top: 30ch;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    font-size: 25px;;
+    position: absolute;
+    background-color: rgb(124, 124, 124);
+    color: white;
+    border: 3px solid rgb(59, 59, 59);
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgb(124, 124, 124);
+}
+.open:hover {
+    background-color: rgb(189, 189, 189);
+    border: 3px solid rgb(139, 139, 139);
+    color: rgb(37, 37, 37);
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    padding: 15px;
+    display: block;
+    border: 3px solid crimson;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(133, 88, 88);
+    width: 40%;
+    background-color: rgb(252, 149, 149);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+h2 {
+    text-align: center;
+}
+p {
+    text-indent: 30px;
+}
+.modal {
+    display: none;
+}
+
+.Button_x {
+    position: absolute;
+    top: -30px;
+    right: -55px;
+    padding: 5px;
+    border: 3px solid crimson;
+    border-radius: 50%;
+    background-color: rgb(252, 149, 149);
+    box-shadow: 7px 7px 7px rgb(133, 88, 88);
+}
+.Button_x:hover {
+    background-color: rgb(250, 209, 209);
+    cursor: pointer;
+}
+
+
+#open:checked ~ .modal {
+    display: flex;
+    background-color: rgb(224, 191, 191);
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
