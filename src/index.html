@@ -1,15 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="./js/main.js"></script>
   <title>Hello world</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 </head>
 
-<body>
+<body >
+
+  <div class="fotorama" style="padding:5% 0 5% 15%;" data-maxwidth="80%" data-allowfullscreen="native" data-nav="thumbs" data-transition="crossfade" data-loop="true" data-autoplay="true">
+    <img src="https://s.fotorama.io/1.jpg" data-caption="Лесная дорога">
+    <img src="https://s.fotorama.io/2.jpg" data-caption="Горы">
+    <img src="https://s.fotorama.io/3.jpg" data-caption="Долина">
+  </div>
+
 </body>
 
 </html>
