@@ -1,1 +1,101 @@
 
+.box {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: repeat(4,1fr);
+    
+    height: 35vh;
+}
+.box>div:nth-child(2n) {
+    background-color: rgb(119, 60, 255);
+}
+.box>div:nth-child(2n+1) {
+    background-color:rgb(184, 158, 245);
+}
+.box>.item_1 {
+    grid-area: 1/1/span 1/span 3;
+}
+.box>.item_2 {
+    grid-area: 2/1/4/2;
+}
+.box>.item_4 {
+    grid-area: 2/3/span 2/span 1;
+}
+.box>.item_6 {
+    grid-area: 4/1/4/4;
+}
+
+.box2 {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "head head head"
+    "men . men2"
+    "men . men2"
+    "foot foot foot";
+    height: 35vh;
+    margin-top: 10px;
+}
+.box2>div:nth-child(2n) {
+    background-color: rgb(60, 161, 255);
+}
+.box2>div:nth-child(2n+1) {
+    background-color:rgb(151, 199, 243);
+}
+.box2>.item_1 {
+    grid-area: head;
+}
+.box2>.item_2 {
+    grid-area: men;
+}
+.box2>.item_4 {
+    grid-area: men2;
+}
+.box2>.item_6 {
+    grid-area: foot;
+}
+@media screen and (max-width:600px) {
+    .box2 {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-areas: 
+        "head head"
+        "men men2"
+        "men men2"
+        ". ."
+        "foot foot";
+        height: 45vh;
+        margin-top: 10px;
+    }
+} 
+@media screen and (max-width:320px) {
+    .box2 {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-areas: 
+        "head"
+        "men"
+        "men2"
+        "."
+        "."
+        "foot";
+        height: 45vh;
+        margin-top: 10px;
+    }
+} 
+.box3 {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(80px,1fr));
+    height: 10vh;
+    margin-top: 10px;
+}
+.box3>div:nth-child(2n) {
+    background-color: rgb(60, 255, 148);
+}
+.box3>div:nth-child(2n+1) {
+    background-color:rgb(187, 255, 217);
+}
+/*.box3>div {
+    
+}*/
