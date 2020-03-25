@@ -1,11 +1,50 @@
-function getValues (){
-    var result = [];
+function getValues() {
+    var results = [];
     var i = 0;
-do {
-   var result[i] = +prompt ('Введите число 1'); 
-   i++
-   var isProcess = confirm ('Продолжить?')
-} while (isProcess);
-for (var m=0){}
-alert ('Результат: ' + result);
+    do {
+        results[i++] = +prompt('Введите число');
+        var isProcess = confirm('Продолжить?')
+    } while (isProcess);
+
+    return results;
 }
+function calculator () {
+do {
+    var numbers = getValues();
+    var res = numbers[0];
+    for (var i = 0; i < numbers.length; i = i + 2) {
+        res += numbers[i];
+    }
+    alert('Итого ' + res)
+
+    var isProcess = confirm('Продолжить?');
+
+} while (isProcess);
+}
+
+function triangle(lines, sign) {
+    var line = sign;
+
+    for ( var i = 0; i < lines; i++) {
+        console.log (line);
+        line += sign;
+    }
+}
+
+triangle(6, '-');
+
+function triangleRevers (lines, sign) {
+    var strings = [];
+    var line;
+
+    for (var i = 0; i < lines; i++) {
+        line = '';
+        for (var j = 0; j < lines - i; j++) {
+            line += sign;
+        }
+        strings[i] = line;
+        console.log(strings[i]);
+        
+    }
+}
+triangleRevers(6, '*');
