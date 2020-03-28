@@ -48,3 +48,20 @@ function triangleRevers (lines, sign) {
     }
 }
 triangleRevers(6, '*');
+
+var values = ['',''];
+var action = '';
+var index =0;
+var inputEl = document.querySelector('.calculator_input');
+var numberContainer = document.querySelector('.button')
+
+function handleNumberClick(e) {
+    var v = e.target.dataset.value;
+    
+    if (v) {
+        values[index] += v;
+        inputEl.value = values[0] + action + values[1];
+    }
+     
+}
+

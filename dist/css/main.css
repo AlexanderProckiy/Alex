@@ -1,2 +1,43 @@
+.calculator {
+  margin: 20px auto;
+  border: 1px solid blue;
+  border-radius: 10px;
+  height: 200px;
+  width: 150px; }
+
+.input {
+  border: 1px solid blueviolet;
+  margin: 5px; }
+
+.calculator_input {
+  width: 97%; }
+
+.all_button {
+  display: flex;
+  margin: 10px auto;
+  width: 90%;
+  height: 150px; }
+
+.block_nombers {
+  border: 1px solid blueviolet;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.button {
+  width: 30%; }
+
+button {
+  width: 100%; }
+
+.operation {
+  width: 30%;
+  border: 1px solid blueviolet;
+  display: flex;
+  flex-direction: column; }
+
+.button_oper {
+  margin: 0 10% 10%; }
 
 /*# sourceMappingURL=maps/main.css.map */
